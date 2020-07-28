@@ -11,6 +11,8 @@ if [ $# -eq 0 ]
     MACHINE_NAME=$1
 fi
 
+echo "Machine name: '${MACHINE_NAME}'"
+
 #Load python on CSCS machines
 case ${MACHINE_NAME} in
       tsa*|arolla*) module load python/3.7.4;;

@@ -5,9 +5,10 @@ __author__      = "Mikhail Zhigun"
 __copyright__   = "Copyright 2020, MeteoSwiss"
 
 from sys import version_info as v
-from shutil import which
 
 assert v[0] == 3 and v[1] >= 5, 'Python should be 3.5 or older'
+
+from shutil import which
 
 def check_install(name):
 	assert which(name), '%s not installed' % name
